@@ -7,38 +7,40 @@
 
 body {
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-  background-color: #fdfdfc;
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #ffedf0, #f0f9ff);
+  color: #222;
   line-height: 1.6;
 }
 
 /* === Header & Navigation === */
 header {
-  background: linear-gradient(135deg, #0d1b2a, #1b263b);
-  color: #f5f5f5;
+  background: linear-gradient(135deg, #ff6ec7, #00c3ff);
+  color: white;
   padding: 1.5rem 0;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 2px;
   margin-bottom: 0.5rem;
-  color: #f8f9fa;
+  color: #fff;
 }
 
 nav a {
-  color: #e0e0e0;
+  color: #fff;
   text-decoration: none;
   margin: 0 1rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffcf56;
-  border-bottom: 2px solid #ffcf56;
+  color: #fffc00;
+  text-shadow: 0 0 5px #fff;
 }
 
 /* === Main Content === */
@@ -47,18 +49,18 @@ main {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 3rem;
-  border-radius: 14px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   animation: fadeIn 0.6s ease-in-out;
 }
 
 h1, h2, h3 {
-  color: #0d1b2a;
+  color: #ff3cac;
   margin-bottom: 1rem;
 }
 
 h2 {
-  border-bottom: 2px solid #e6b800;
+  border-bottom: 3px solid #00c3ff;
   display: inline-block;
   padding-bottom: 0.3rem;
   margin-top: 1rem;
@@ -70,36 +72,41 @@ p, li {
   color: #333;
 }
 
-/* === Lists & Tables === */
+/* === Lists === */
 ul {
-  list-style-type: "– ";
+  list-style-type: "★ ";
   margin-left: 1.5rem;
+  color: #ff3cac;
 }
 
 /* === Project Showcase === */
 .project {
   margin-bottom: 2rem;
-  padding-left: 1.2rem;
-  border-left: 4px solid #e6b800;
-  transition: transform 0.3s ease;
+  padding-left: 1.5rem;
+  border-left: 5px solid #00c3ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #fff0f5, #f0f9ff);
+  padding: 1rem;
 }
 
 .project:hover {
-  transform: translateX(5px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 /* === Contact Links === */
 .contact-links a {
-  color: #1b263b;
-  font-weight: 500;
+  color: #ff3cac;
+  font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-links a:hover {
-  color: #e6b800;
-  text-decoration: underline;
+  color: #00c3ff;
+  transform: scale(1.1);
 }
 
 /* === Form Styling === */
@@ -112,52 +119,53 @@ form {
 }
 
 input, textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 14px;
+  border: 2px solid #ff3cac;
+  border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
-  background-color: #fafafa;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
 input:focus, textarea:focus {
-  border-color: #e6b800;
-  box-shadow: 0 0 5px rgba(230, 184, 0, 0.3);
+  border-color: #00c3ff;
+  box-shadow: 0 0 10px rgba(0,195,255,0.3);
   outline: none;
 }
 
 button {
-  background-color: #1b263b;
+  background: linear-gradient(135deg, #ff3cac, #00c3ff);
   color: #fff;
   border: none;
-  padding: 12px 16px;
+  padding: 14px 18px;
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  transition: all 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #e6b800;
-  color: #1a1a1a;
-  transform: scale(1.03);
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #00c3ff, #ff3cac);
 }
 
 /* === Footer === */
 footer {
-  background: #0d1b2a;
-  color: #eaeaea;
+  background: linear-gradient(135deg, #ff6ec7, #00c3ff);
+  color: white;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 2rem;
   font-size: 0.95rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 /* === Animations === */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
