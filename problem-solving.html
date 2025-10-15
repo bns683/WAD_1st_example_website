@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Doe | Problem-Solving Case Study</title>
+  <title>Problem Solving | Restaurant Digital Transformation</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Restaurant Digital Transformation Case Study</h1>
+    <h1>Digital Transformation: Restaurant Web Solution</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="skills.html">Skills</a>
@@ -20,67 +19,86 @@
   </header>
 
   <main>
-    <h2>Case Study Overview</h2>
+    <h2>Case Study – Restaurant Digital Transformation Scenario</h2>
     <p>
-      As the <strong>Chief Technology Officer (CTO)</strong> of a local restaurant, my objective was to support the restaurant’s
-      <strong>digital transformation</strong> by designing and developing a web-based solution that enhances customer engagement,
-      modernizes communication, and streamlines the table booking process.
+      As the <strong>Chief Technology Officer (CTO)</strong> of a local restaurant, your mission is to lead the digital transformation by
+      developing a web-based solution that enhances customer experience and operational efficiency.
+      The goal is to provide customers with an elegant, user-friendly platform to explore the menu, make bookings,
+      and send enquiries — all integrated into a single digital ecosystem.
     </p>
 
+    <h3>Problem Context</h3>
     <p>
-      The restaurant had been relying on manual phone bookings and walk-in management, which led to inefficiencies, limited marketing reach,
-      and missed opportunities for customer feedback. To address these challenges, I led the design of an interactive online platform —
-      a central digital hub where customers can <strong>book tables, send feedback, and connect via social media</strong>.
+      Many small restaurants struggle to keep up with digital expectations. Customers expect the convenience of
+      online reservations, contactless menus, and instant communication channels. This project demonstrates how
+      technology can solve these challenges through a simple yet powerful web application prototype.
     </p>
 
-    <h2>Business Goals</h2>
+    <h3>Proposed Solution: Web Application Features</h3>
     <ul>
-      <li>Improve customer engagement and loyalty through digital channels.</li>
-      <li>Enable seamless online table reservations and customer feedback collection.</li>
-      <li>Integrate the restaurant’s web presence with major social media platforms.</li>
-      <li>Provide customers with quick access to contact information and promotions.</li>
+      <li><strong>Dynamic Menu:</strong> Displays dishes, descriptions, and prices that can be easily updated by staff.</li>
+      <li><strong>Online Booking System:</strong> Customers can reserve a table with their preferred date and time.</li>
+      <li><strong>Customer Enquiries:</strong> A simple form for feedback, catering requests, or special events.</li>
+      <li><strong>Responsive Design:</strong> Works seamlessly across desktop, tablet, and mobile devices.</li>
     </ul>
 
-    <h2>Digital Solution Features</h2>
-    <p>
-      The developed website integrates key digital tools for communication and marketing. Its responsive design ensures accessibility across devices,
-      and the interactive form (below) demonstrates how customers can submit a booking or feedback request directly via email —
-      without requiring a live database connection.
-    </p>
+    <h3>Sample Restaurant Menu</h3>
+    <div class="menu-section">
+      <div class="menu-item">
+        <h4>Signature Truffle Burger</h4>
+        <p>Premium Angus beef, truffle mayo, caramelized onions – £12.99</p>
+      </div>
+      <div class="menu-item">
+        <h4>Vegan Garden Bowl</h4>
+        <p>Quinoa, roasted vegetables, avocado, lemon tahini – £9.99</p>
+      </div>
+      <div class="menu-item">
+        <h4>Classic Fries</h4>
+        <p>Golden-cut fries with house seasoning – £3.49</p>
+      </div>
+      <div class="menu-item">
+        <h4>Chocolate Lava Cake</h4>
+        <p>Warm chocolate cake with molten center – £5.49</p>
+      </div>
+    </div>
 
-    <h3>Contact & Social Media Links</h3>
-    <p>Email: <a href="mailto:info@doerestaurant.com">info@doerestaurant.com</a></p>
-    <p>Follow us:
-      <a href="https://facebook.com" target="_blank">Facebook</a> |
-      <a href="https://instagram.com" target="_blank">Instagram</a> |
-      <a href="https://twitter.com" target="_blank">Twitter/X</a>
-    </p>
+    <h3>Make a Booking</h3>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-    <h3>Interactive Booking & Feedback Form</h3>
-    <form onsubmit="sendEmail(event)">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" rows="5" placeholder="Enter your booking details or feedback..." required></textarea>
-      <button type="submit">Send Email</button>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+      <button type="submit">Book a Table</button>
     </form>
 
-    <h2>Design Concept & Rationale</h2>
-    <p>
-      The page design prioritizes <strong>clarity, usability, and real-world functionality</strong>. By keeping the layout clean and the form interaction simple,
-      the solution provides a tangible demonstration of how digital technologies can modernize traditional restaurant operations.
-      The “mailto” integration enables instant communication through the user’s email client — a lightweight yet effective method for small businesses
-      transitioning into digital systems.
-    </p>
+    <h3>Send an Enquiry</h3>
+    <form action="#" method="post">
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Ask about catering, events, or feedback..." required></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
 
+    <h3>Outcome and Reflection</h3>
     <p>
-      This design concept mirrors the broader philosophy of <strong>digital transformation strategy</strong> — using accessible, scalable web tools
-      to deliver measurable value quickly, while laying a foundation for future upgrades such as real-time booking systems, CRM integration,
-      and analytics dashboards.
+      This project demonstrates the ability to apply problem-solving and digital innovation within a business context.
+      It integrates technical development (HTML, CSS, and form logic) with strategic thinking — enhancing customer
+      engagement and supporting business growth through digital tools.
     </p>
   </main>
 
   <footer>
-    <p>© 2025 John Doe | johndoedigital.com</p>
+    <p>© 2025 John Doe | Digital Transformation Prototype</p>
   </footer>
 </body>
 </html>
