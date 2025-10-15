@@ -1,87 +1,178 @@
-
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
+/* === Global Reset & Font === */
+* {
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: #fdfdfc;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* === Header & Navigation === */
 header {
-  background: #1a1a1a;
-  color: white;
-  padding: 1rem;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: #f5f5f5;
+  padding: 1.5rem 0;
   text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
 }
 
 nav a {
-  color: white;
+  color: #e0e0e0;
   text-decoration: none;
   margin: 0 1rem;
-  font-weight: bold;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #ffcf56;
+  border-bottom: 2px solid #ffcf56;
 }
 
+/* === Main Content === */
 main {
-  padding: 2rem;
+  background: #ffffff;
   max-width: 1000px;
-  margin: auto;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 h1, h2, h3 {
-  color: #222;
+  color: #0d1b2a;
+  margin-bottom: 1rem;
 }
 
-footer {
-  background: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+h2 {
+  border-bottom: 2px solid #e6b800;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-top: 1rem;
 }
 
+p, li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* === Lists & Tables === */
+ul {
+  list-style-type: "– ";
+  margin-left: 1.5rem;
+}
+
+/* === Project Showcase === */
 .project {
   margin-bottom: 2rem;
-  border-left: 4px solid #ffcc00;
-  padding-left: 1rem;
+  padding-left: 1.2rem;
+  border-left: 4px solid #e6b800;
+  transition: transform 0.3s ease;
 }
 
+.project:hover {
+  transform: translateX(5px);
+}
+
+/* === Contact Links === */
 .contact-links a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #0077b5;
+  color: #1b263b;
+  font-weight: 500;
   text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
 }
 
 .contact-links a:hover {
+  color: #e6b800;
   text-decoration: underline;
 }
 
+/* === Form Styling === */
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   max-width: 500px;
+  margin-top: 1rem;
 }
 
-input, textarea, button {
-  padding: 10px;
-  border-radius: 5px;
+input, textarea {
+  padding: 12px;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #e6b800;
+  box-shadow: 0 0 5px rgba(230, 184, 0, 0.3);
+  outline: none;
 }
 
 button {
-  background: #0077b5;
-  color: white;
+  background-color: #1b263b;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background: #005f8b;
+  background-color: #e6b800;
+  color: #1a1a1a;
+  transform: scale(1.03);
+}
+
+/* === Footer === */
+footer {
+  background: #0d1b2a;
+  color: #eaeaea;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  form {
+    width: 100%;
+  }
 }
